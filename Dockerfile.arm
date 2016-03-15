@@ -1,0 +1,6 @@
+FROM aspnetbase
+
+ADD . /app
+WORKDIR /app
+
+ENTRYPOINT ["dnx", "-p", "./approot/src/PartsUnlimitedWebsite/project.json", "web", "--server.urls", "http://0.0.0.0:5000"]
