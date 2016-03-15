@@ -29,11 +29,9 @@ namespace PartsUnlimited.Models
         public string Title { get; set; }
 
         [Required]
-        [Range(0.01, 500.00)]
         [DataType(DataType.Currency)]
         public decimal Price { get; set; }
 
-        [Range(0.01, 500.00)]
         [DataType(DataType.Currency)]
         [Display(Name = "Sale Price")]
         public decimal SalePrice { get; set; }
